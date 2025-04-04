@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+void eliminateLeftFactoring(char *nonTerminal, char *common, char *alpha, char *beta) {
+    printf("%s -> %s%s'\n", nonTerminal, common, nonTerminal);
+    printf("%s' -> %s | %s | ε\n", nonTerminal, alpha, beta);
+}
+
+int main() {
+    eliminateLeftFactoring("A", "x", "y", "z");
+    return 0;
+}
