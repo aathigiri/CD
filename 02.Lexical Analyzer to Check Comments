@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <string.h>
+
+void checkComment(char *str) {
+    if (strstr(str, "//") == str) 
+        printf("Single-line comment detected\n");
+    else if (strstr(str, "/*") == str) 
+        printf("Multi-line comment detected\n");
+    else 
+        printf("Not a comment\n");
+}
+
+int main() {
+    char str1[] = "// This is a comment";
+    char str2[] = "/* Multi-line comment */";
+    checkComment(str1);
+    checkComment(str2);
+    return 0;
+}
