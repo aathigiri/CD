@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+void generateMachineCode() {
+    printf("MOV R1, A\nMOV R2, B\nADD R1, R2\nMOV C, R1\n");
+}
+
+int main() {
+    generateMachineCode();
+    return 0;
+}
