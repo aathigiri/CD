@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <string.h>
+
+int isValidGrammar(char *str) {
+    return strcmp(str, "ab") == 0;
+}
+
+int main() {
+    char input[] = "ab";
+    printf("%s is %s\n", input, isValidGrammar(input) ? "Valid" : "Invalid");
+    return 0;
+}
