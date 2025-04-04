@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include <string.h>
+
+int E(char *str) { return strcmp(str, "a+b") == 0; }
+
+int main() {
+    char expr[] = "a+b";
+    printf("%s is %s\n", expr, E(expr) ? "Valid" : "Invalid");
+    return 0;
+}
