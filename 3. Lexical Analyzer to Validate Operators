@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+void checkOperator(char ch) {
+    if (ch == '+' || ch == '-' || ch == '*' || ch == '/')
+        printf("%c is a valid arithmetic operator\n", ch);
+    else
+        printf("%c is not a valid arithmetic operator\n", ch);
+}
+
+int main() {
+    char operators[] = {'+', '-', '*', '/', '%'};
+    for (int i = 0; i < 5; i++)
+        checkOperator(operators[i]);
+    return 0;
+}
