@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+void generateTAC(char *a, char *b, char *op, char *c) {
+    printf("t1 = %s %s %s\n", b, op, c);
+    printf("%s = t1\n", a);
+}
+
+int main() {
+    generateTAC("x", "a", "+", "b");
+    return 0;
+}
