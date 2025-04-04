@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <ctype.h>
+
+int isValidIdentifier(char *str) {
+    if (!isalpha(str[0]) && str[0] != '_') return 0;
+    for (int i = 1; str[i] != '\0'; i++)
+        if (!isalnum(str[i]) && str[i] != '_') return 0;
+    return 1;
+}
+
+int main() {
+    char identifier[] = "var_name";
+    printf("%s is %s\n", identifier, isValidIdentifier(identifier) ? "valid" : "invalid");
+    return 0;
+}
