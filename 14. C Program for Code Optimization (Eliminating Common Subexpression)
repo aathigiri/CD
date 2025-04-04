@@ -1,0 +1,8 @@
+#include <stdio.h>
+
+int main() {
+    int a = 2, b = 3;
+    int x = a * b;
+    printf("Optimized Code: x = %d\n", x);
+    return 0;
+}
