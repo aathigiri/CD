@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char str[] = "Hello World\nThis is Compiler";
+    int chars = 0, words = 1, lines = 1;
+    
+    for (int i = 0; str[i] != '\0'; i++) {
+        chars++;
+        if (str[i] == ' ') words++;
+        if (str[i] == '\n') lines++;
+    }
+
+    printf("Characters: %d\nWords: %d\nLines: %d\n", chars, words, lines);
+    return 0;
+}
